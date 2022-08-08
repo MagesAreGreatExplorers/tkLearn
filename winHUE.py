@@ -564,6 +564,8 @@ class Main(object):
             self.__finish_b7or8(7)
         if self.__b8list is not None:
             self.__finish_b7or8(8)
+        if self.__b2list is not None:
+            self.__finish_b2(self.__them.set_them_id)
         self.__r_, self.__g_, self.__b_ = Main.__press_to_get_rgb(self.__key_press)
         self.__win.deiconify()
         self.__display_color_in_canvas()
